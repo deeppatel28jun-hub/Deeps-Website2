@@ -1,34 +1,140 @@
-<!doctype html>
-<html>
+<!DOCTYPE html>
+<html lang="en">
 <head>
-  <meta charset="utf-8">
-  <title>Deez Nutz Songs</title>
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Personal dWeb</title>
-  <link rel="stylesheet" href="styles.css" type="text/css" />
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <!-- ✏️ EDIT: Change the tab title -->
+  <title>Deep's Portfolio — Cybersecurity</title>
+  <link rel="stylesheet" href="style.css">
 </head>
-
 <body>
-  <div class="wrapper">
-	<header>
-	  <h1>Fuck around and Find out</h1>
-	</header>
-	<nav>
-		<a href="index.html">Home</a> &#xA0;
-		<a href="about.html">About</a> &#xA0;
-		<a href="contact.html">Contact</a> &#xA0;
-		<a href="Personal projects.html">Projects</a> &#xA0;
-		<a href="https://www.linkedin.com/in/dxcent-deep/">LinkedIn</a> &#xA0;
-		<a href="https://www.instagram.com/deeppatel8126/">Instagram</a> &#xA0;
-	</nav>
-  <main>
-	  <h2>Welcome to Deep's Personal Web </h2>
-	  <dl>
-        <dt><strong>About Me</strong></dt>
-		 <dd>My name is Deep. I am Student majoring in Cybersecurity and minor in Accounting.</dd>
-		<dt><strong>About Website</strong></dt>
-		 </main>
-	</div>
+ 
+<!-- ═══════════════════════════════════════════════
+     NAVIGATION  (same on every page)
+     ✏️ EDIT: Update nav-logo text if you want a different handle
+     ═══════════════════════════════════════════════ -->
+<nav>
+  <a href="index.html" class="nav-logo">[<span class="editable">DEEP</span>_SEC]</a>
+ 
+  <button class="nav-toggle" id="navToggle" aria-label="Open menu">
+    <span></span><span></span><span></span>
+  </button>
+ 
+  <ul class="nav-links" id="navLinks">
+    <li><a href="index.html" class="active">Home</a></li>
+    <li><a href="about.html">About</a></li>
+    <li><a href="skills.html">Skills</a></li>
+    <li><a href="projects.html">Projects</a></li>
+    <li><a href="competitions.html">Competitions</a></li>
+    <li><a href="contact.html">Contact</a></li>
+  </ul>
+ 
+  <!-- ✏️ EDIT: Change "AVAILABLE" to "OPEN TO WORK" or remove this block -->
+  <div class="nav-status">
+    <div class="status-dot"></div>
+    AVAILABLE
+  </div>
+</nav>
+ 
+<!-- ═══════════════════════════════════════════════
+     HERO SECTION
+     ═══════════════════════════════════════════════ -->
+<section class="hero">
+ 
+  <!-- ✏️ EDIT: Your role / tagline -->
+  <div class="hero-tag">// <span class="editable">cybersecurity student &amp; researcher</span></div>
+ 
+  <!-- ✏️ EDIT: Your name -->
+  <h1 class="hero-name">
+    <span class="editable">Deep</span>'s<br>
+    <span class="accent">Portfolio</span>
+  </h1>
+ 
+  <!-- ✏️ EDIT: Your specialisation -->
+  <div class="hero-title">
+    <span class="editable">Penetration Testing &amp; CTF Player</span><span class="cursor">_</span>
+  </div>
+ 
+  <!-- ✏️ EDIT: Short bio / elevator pitch (2–3 sentences) -->
+  <p class="hero-desc editable-block">
+    Cybersecurity student with a passion for offensive security, ethical hacking,
+    and CTF competitions. I'm building real-world skills in penetration testing,
+    vulnerability research, and secure system design — one challenge at a time.
+  </p>
+ 
+  <div class="hero-ctas">
+    <a href="projects.html" class="btn-primary">View Projects</a>
+    <a href="contact.html" class="btn-secondary">Contact Me</a>
+  </div>
+ 
+  <!-- Decorative hex grid (visual only, no editing needed) -->
+  <svg class="hero-visual" width="400" height="480" viewBox="0 0 400 480" aria-hidden="true">
+    <defs>
+      <pattern id="hexpat" x="0" y="0" width="60" height="52" patternUnits="userSpaceOnUse">
+        <polygon points="30,1 58,16 58,46 30,61 2,46 2,16"
+                 fill="none" stroke="#00d4ff" stroke-width="0.8"/>
+      </pattern>
+    </defs>
+    <rect width="400" height="480" fill="url(#hexpat)"/>
+  </svg>
+ 
+</section>
+ 
+<!-- ═══════════════════════════════════════════════
+     QUICK STATS BAR
+     ✏️ EDIT: Update the numbers to match your real stats
+     ═══════════════════════════════════════════════ -->
+<div style="border-top:1px solid var(--border);border-bottom:1px solid var(--border);
+            background:var(--surface);">
+  <div style="max-width:1000px;margin:0 auto;padding:1.5rem;
+              display:flex;flex-wrap:wrap;justify-content:space-around;gap:1.5rem;">
+ 
+    <div style="text-align:center;">
+      <span style="font-family:var(--mono);font-size:1.8rem;color:var(--accent);display:block;">
+        <span class="editable">2+</span>
+      </span>
+      <span style="font-size:13px;color:var(--text-muted);">Years Studying</span>
+    </div>
+ 
+    <div style="text-align:center;">
+      <span style="font-family:var(--mono);font-size:1.8rem;color:var(--accent);display:block;">
+        <span class="editable">15+</span>
+      </span>
+      <span style="font-size:13px;color:var(--text-muted);">CTFs Competed</span>
+    </div>
+ 
+    <div style="text-align:center;">
+      <span style="font-family:var(--mono);font-size:1.8rem;color:var(--accent);display:block;">
+        <span class="editable">10+</span>
+      </span>
+      <span style="font-size:13px;color:var(--text-muted);">Projects Built</span>
+    </div>
+ 
+    <div style="text-align:center;">
+      <span style="font-family:var(--mono);font-size:1.8rem;color:var(--accent);display:block;">
+        <span class="editable">5+</span>
+      </span>
+      <span style="font-size:13px;color:var(--text-muted);">Certs &amp; Courses</span>
+    </div>
+ 
+  </div>
+</div>
+ 
+<!-- ═══════════════════════════════════════════════
+     FOOTER  (same on every page)
+     ✏️ EDIT: Your name in the footer
+     ═══════════════════════════════════════════════ -->
+<footer>
+  <p>Built by <span class="editable">Deep</span> — Pure HTML &amp; CSS — Hosted on GitHub Pages</p>
+</footer>
+ 
+<script>
+  // Mobile nav toggle — no framework needed
+  document.getElementById('navToggle').addEventListener('click', function () {
+    document.getElementById('navLinks').classList.toggle('open');
+  });
+</script>
+ 
 </body>
 </html>
-
+ 
