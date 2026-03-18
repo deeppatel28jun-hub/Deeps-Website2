@@ -3,23 +3,23 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Skills — Deep's Portfolio</title>
-  <link rel="stylesheet" href="styles.css">
+  <title>Skills — Deep Patel</title>
+  <link rel="stylesheet" href="style.css">
 </head>
 <body>
- 
-<!-- ═══════════════════════════════ NAVIGATION ═══════════════════════════════ -->
+
 <nav>
-  <a href="index.html" class="nav-logo">[<span class="editable">DEEP</span>_SEC]</a>
+  <a href="index.html" class="nav-logo">[DEEP_SEC]</a>
   <button class="nav-toggle" id="navToggle" aria-label="Open menu">
     <span></span><span></span><span></span>
   </button>
   <ul class="nav-links" id="navLinks">
     <li><a href="index.html">Home</a></li>
     <li><a href="about.html">About</a></li>
-    <li><a href="skills.html" class="active">Skills</a></li>
-    <li><a href="projects.html">Projects</a></li>
-    <li><a href="competitions.html">Competitions</a></li>
+    <li><a href="skill.html" class="active">Skills</a></li>
+    <li><a href="Projects.html">Projects</a></li>
+    <li><a href="Experience.html">Experience</a></li>
+    <li><a href="Competitions.html">Competitions</a></li>
     <li><a href="contact.html">Contact</a></li>
   </ul>
   <div class="nav-status">
@@ -27,162 +27,144 @@
     AVAILABLE
   </div>
 </nav>
- 
-<!-- ═══════════════════════════════ PAGE CONTENT ════════════════════════════ -->
+
 <main class="page-wrap">
- 
+
   <div class="section-label">02 — skills</div>
   <h1 class="section-title">Arsenal</h1>
- 
-  <!-- ═══ SKILL CARDS ════════════════════════════════════════════════════ -->
-  <!-- ✏️ EDIT: Change skill names, descriptions, and bar widths (0%–100%).
-       To add a skill: copy one .skill-card block and paste below.
-       To remove: delete the whole .skill-card block. -->
- 
+
   <div class="skills-grid" id="skillsGrid">
- 
-    <div class="skill-card editable-block">
+
+    <div class="skill-card">
       <span class="skill-icon">&gt;_</span>
-      <div class="skill-name editable">Penetration Testing</div>
-      <div class="skill-desc editable">
-        Web apps, networks, and APIs. Methodologies: OWASP, PTES, NIST.
-      </div>
-      <!-- ✏️ EDIT: data-width = your proficiency (e.g. "85%") -->
-      <div class="skill-bar-wrap"><div class="skill-bar" data-width="85%"></div></div>
-    </div>
- 
-    <div class="skill-card editable-block">
-      <span class="skill-icon">#</span>
-      <div class="skill-name editable">Network Security</div>
-      <div class="skill-desc editable">
-        TCP/IP, Wireshark, firewall analysis, packet crafting with Scapy.
-      </div>
-      <div class="skill-bar-wrap"><div class="skill-bar" data-width="80%"></div></div>
-    </div>
- 
-    <div class="skill-card editable-block">
-      <span class="skill-icon">$</span>
-      <div class="skill-name editable">Linux &amp; Scripting</div>
-      <div class="skill-desc editable">
-        Daily Linux user. Bash scripting, automation, system hardening.
-      </div>
-      <div class="skill-bar-wrap"><div class="skill-bar" data-width="90%"></div></div>
-    </div>
- 
-    <div class="skill-card editable-block">
-      <span class="skill-icon">~</span>
-      <div class="skill-name editable">Python</div>
-      <div class="skill-desc editable">
-        Security tooling, exploit scripts, automation, data parsing.
-      </div>
-      <div class="skill-bar-wrap"><div class="skill-bar" data-width="80%"></div></div>
-    </div>
- 
-    <div class="skill-card editable-block">
-      <span class="skill-icon">!</span>
-      <div class="skill-name editable">CTF / Binary Exploitation</div>
-      <div class="skill-desc editable">
-        Reverse engineering, pwn, forensics, cryptography challenges.
-      </div>
-      <div class="skill-bar-wrap"><div class="skill-bar" data-width="70%"></div></div>
-    </div>
- 
-    <div class="skill-card editable-block">
-      <span class="skill-icon">@</span>
-      <div class="skill-name editable">OSINT</div>
-      <div class="skill-desc editable">
-        Open-source intelligence gathering, reconnaissance, threat profiling.
+      <div class="skill-name">Penetration Testing</div>
+      <div class="skill-desc">
+        Web apps, networks, and cloud environments. OWASP methodologies and
+        authorised red team techniques.
       </div>
       <div class="skill-bar-wrap"><div class="skill-bar" data-width="75%"></div></div>
     </div>
- 
-    <!-- ✏️ EDIT: Add more skill cards here by copying the block above -->
- 
+
+    <div class="skill-card">
+      <span class="skill-icon">#</span>
+      <div class="skill-name">Network Security</div>
+      <div class="skill-desc">
+        Router and switch management, firewall configuration, traffic analysis,
+        and network defence strategies.
+      </div>
+      <div class="skill-bar-wrap"><div class="skill-bar" data-width="80%"></div></div>
+    </div>
+
+    <div class="skill-card">
+      <span class="skill-icon">☁</span>
+      <div class="skill-name">Azure &amp; Hyper-V</div>
+      <div class="skill-desc">
+        Microsoft Azure cloud services and Hyper-V virtualisation for
+        lab environments and enterprise deployments.
+      </div>
+      <div class="skill-bar-wrap"><div class="skill-bar" data-width="70%"></div></div>
+    </div>
+
+    <div class="skill-card">
+      <span class="skill-icon">$</span>
+      <div class="skill-name">Linux &amp; Windows</div>
+      <div class="skill-desc">
+        Daily Linux user. Windows system administration, forensic analysis
+        of Windows artefacts, and system hardening.
+      </div>
+      <div class="skill-bar-wrap"><div class="skill-bar" data-width="85%"></div></div>
+    </div>
+
+    <div class="skill-card">
+      <span class="skill-icon">{ }</span>
+      <div class="skill-name">Java</div>
+      <div class="skill-desc">
+        Object-oriented programming, scripting, and building
+        small security-focused utilities.
+      </div>
+      <div class="skill-bar-wrap"><div class="skill-bar" data-width="65%"></div></div>
+    </div>
+
+    <div class="skill-card">
+      <span class="skill-icon">~</span>
+      <div class="skill-name">IT Support &amp; Forensics</div>
+      <div class="skill-desc">
+        Hardware setup, troubleshooting, onboarding/offboarding, and
+        basic forensic investigation of Windows systems.
+      </div>
+      <div class="skill-bar-wrap"><div class="skill-bar" data-width="80%"></div></div>
+    </div>
+
   </div>
- 
+
   <hr class="divider" style="margin:3.5rem 0;">
- 
-  <!-- ═══ TOOLS & TECH ════════════════════════════════════════════════════ -->
+
+  <!-- TOOLS -->
   <div class="section-label">tools &amp; technologies</div>
   <h2 class="section-title" style="font-size:1.4rem;">What I Use</h2>
- 
-  <!-- ✏️ EDIT: Add / remove tool pills. Just duplicate or delete a <div class="tool-pill"> -->
-  <div class="tools-grid editable-block">
-    <div class="tool-pill editable">Kali Linux</div>
-    <div class="tool-pill editable">Metasploit</div>
-    <div class="tool-pill editable">Burp Suite</div>
-    <div class="tool-pill editable">Nmap</div>
-    <div class="tool-pill editable">Wireshark</div>
-    <div class="tool-pill editable">Ghidra</div>
-    <div class="tool-pill editable">GDB / pwndbg</div>
-    <div class="tool-pill editable">Hashcat</div>
-    <div class="tool-pill editable">Aircrack-ng</div>
-    <div class="tool-pill editable">John the Ripper</div>
-    <div class="tool-pill editable">Nikto</div>
-    <div class="tool-pill editable">SQLmap</div>
-    <div class="tool-pill editable">Python 3</div>
-    <div class="tool-pill editable">Bash</div>
-    <div class="tool-pill editable">Git / GitHub</div>
-    <div class="tool-pill editable">Docker</div>
-    <div class="tool-pill editable">VirtualBox</div>
-    <div class="tool-pill editable">VS Code</div>
-    <!-- ✏️ EDIT: Add more tools by copying a tool-pill div -->
+
+  <div class="tools-grid">
+    <div class="tool-pill">Kali Linux</div>
+    <div class="tool-pill">Hyper-V</div>
+    <div class="tool-pill">Microsoft Azure</div>
+    <div class="tool-pill">Wireshark</div>
+    <div class="tool-pill">Nmap</div>
+    <div class="tool-pill">Burp Suite</div>
+    <div class="tool-pill">Metasploit</div>
+    <div class="tool-pill">Java</div>
+    <div class="tool-pill">Windows OS</div>
+    <div class="tool-pill">Linux OS</div>
+    <div class="tool-pill">Git / GitHub</div>
+    <div class="tool-pill">VS Code</div>
+    <div class="tool-pill">VirtualBox</div>
+    <div class="tool-pill">Active Directory</div>
   </div>
- 
+
   <hr class="divider" style="margin:3.5rem 0;">
- 
-  <!-- ═══ PLATFORMS ════════════════════════════════════════════════════════ -->
+
+  <!-- PLATFORMS -->
   <div class="section-label">platforms &amp; learning</div>
   <h2 class="section-title" style="font-size:1.4rem;">Where I Practice</h2>
- 
+
   <div style="display:grid;grid-template-columns:repeat(auto-fit,minmax(200px,1fr));gap:1rem;">
- 
-    <!-- ✏️ EDIT: Add your real platform usernames / ranks -->
-    <div class="cert-item editable-block">
+
+    <div class="cert-item">
       <span class="cert-icon">[HTB]</span>
       <div>
         <div class="cert-name">HackTheBox</div>
-        <div style="font-size:13px;color:var(--text-muted);">
-          Rank: <span class="editable">Hacker</span>
-        </div>
+        <div style="font-size:13px;color:var(--text-muted);">Active labs &amp; challenges</div>
       </div>
     </div>
- 
-    <div class="cert-item editable-block">
-      <span class="cert-icon">[THM]</span>
+
+    <div class="cert-item">
+      <span class="cert-icon">[NCL]</span>
       <div>
-        <div class="cert-name">TryHackMe</div>
-        <div style="font-size:13px;color:var(--text-muted);">
-          Top <span class="editable">5%</span>
-        </div>
+        <div class="cert-name">National Cyber League</div>
+        <div style="font-size:13px;color:var(--text-muted);">Blue Team Competitor</div>
       </div>
     </div>
- 
-    <div class="cert-item editable-block">
-      <span class="cert-icon">[CTF]</span>
+
+    <div class="cert-item">
+      <span class="cert-icon">[DSU]</span>
       <div>
-        <div class="cert-name">CTFtime</div>
-        <div style="font-size:13px;color:var(--text-muted);">
-          Team: <span class="editable">YourTeamName</span>
-        </div>
+        <div class="cert-name">Dakota State University</div>
+        <div style="font-size:13px;color:var(--text-muted);">Cybersecurity lab coursework</div>
       </div>
     </div>
- 
+
   </div>
- 
+
 </main>
- 
-<!-- ═══════════════════════════════ FOOTER ═══════════════════════════════════ -->
+
 <footer>
-  <p>Built by <span class="editable">Deep</span> — Pure HTML &amp; CSS — Hosted on GitHub Pages</p>
+  <p>Built by <span>Deep Patel</span> — Pure HTML &amp; CSS — Hosted on GitHub Pages</p>
 </footer>
- 
+
 <script>
   document.getElementById('navToggle').addEventListener('click', function () {
     document.getElementById('navLinks').classList.toggle('open');
   });
- 
-  // Animate skill bars when they scroll into view
+
   var observer = new IntersectionObserver(function (entries) {
     entries.forEach(function (entry) {
       if (entry.isIntersecting) {
@@ -192,10 +174,10 @@
       }
     });
   }, { threshold: 0.2 });
- 
+
   var grid = document.getElementById('skillsGrid');
   if (grid) observer.observe(grid);
 </script>
- 
+
 </body>
 </html>
