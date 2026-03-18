@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Contact — Deep Patel</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+<nav>
+  <a href="index.html" class="nav-logo">[DEEP_SEC]</a>
+  <button class="nav-toggle" id="navToggle" aria-label="Open menu">
+    <span></span><span></span><span></span>
+  </button>
+  <ul class="nav-links" id="navLinks">
+    <li><a href="index.html">Home</a></li>
+    <li><a href="about.html">About</a></li>
+    <li><a href="skill.html">Skills</a></li>
+    <li><a href="Projects.html">Projects</a></li>
+    <li><a href="Experience.html">Experience</a></li>
+    <li><a href="Competitions.html">Competitions</a></li>
+    <li><a href="contact.html" class="active">Contact</a></li>
+  </ul>
+  <div class="nav-status">
+    <div class="status-dot"></div>
+    AVAILABLE
+  </div>
+</nav>
+
+<main class="page-wrap">
+
+  <div class="section-label">06 — contact</div>
+  <h1 class="section-title">Get In Touch</h1>
+
+  <div class="contact-grid">
+
+    <!-- LEFT: intro + links -->
+    <div class="contact-intro">
+      <p>
+        I'm open to <strong>internships</strong>, <strong>CTF team invitations</strong>,
+        cybersecurity collaboration, and general security chat.
+        Reach out through any channel below — I'll get back to you promptly.
+      </p>
+
+      <div class="contact-links">
+
+        <a class="contact-link"
+           href="https://github.com/deeppatel28jun-hub" target="_blank">
+          <span class="contact-link-icon">[gh]</span>
+          github.com/deeppatel28jun-hub
+        </a>
+
+        <a class="contact-link"
+           href="https://linkedin.com/in/dxcent-deep/" target="_blank">
+          <span class="contact-link-icon">[li]</span>
+          linkedin.com/in/dxcent-deep
+        </a>
+
+        <a class="contact-link"
+           href="mailto:Deeppatel28jun@gmail.com">
+          <span class="contact-link-icon">[em]</span>
+          Deeppatel28jun@gmail.com
+        </a>
+
+        <a class="contact-link"
+           href="https://deepsportfolio.com" target="_blank">
+          <span class="contact-link-icon">[web]</span>
+          deepsportfolio.com
+        </a>
+
+        <a class="contact-link"
+           href="tel:7575303571">
+          <span class="contact-link-icon">[ph]</span>
+          (757) 530-3571
+        </a>
+
+      </div>
+    </div>
+
+
+    <form class="contact-form" action="https://formspree.io/f/xbdzpnql" method="POST">
+
+      <div class="form-group">
+        <label class="form-label" for="name">Name</label>
+        <input class="form-input" type="text" id="name" name="name"
+               placeholder="Your name" required>
+      </div>
+
+      <div class="form-group">
+        <label class="form-label" for="email">Email</label>
+        <input class="form-input" type="email" id="email" name="email"
+               placeholder="your@email.com" required>
+      </div>
+
+      <div class="form-group">
+        <label class="form-label" for="subject">Subject</label>
+        <input class="form-input" type="text" id="subject" name="subject"
+               placeholder="Internship / Collaboration / General">
+      </div>
+
+      <div class="form-group">
+        <label class="form-label" for="message">Message</label>
+        <textarea class="form-textarea" id="message" name="message"
+                  placeholder="Tell me about your project or inquiry..." required></textarea>
+      </div>
+
+      <button type="submit" class="btn-primary" style="align-self:flex-start;">
+        Send Message
+      </button>
+
+    </form>
+
+  </div>
+
+</main>
+
+<footer>
+  <p>Built by <span>Deep Patel</span> — Pure HTML &amp; CSS — Hosted on GitHub Pages</p>
+</footer>
+
+<script>
+  document.getElementById('navToggle').addEventListener('click', function () {
+    document.getElementById('navLinks').classList.toggle('open');
+  });
+</script>
+
+</body>
+</html>
