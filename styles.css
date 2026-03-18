@@ -1,6 +1,6 @@
 @import url('https://fonts.googleapis.com/css2?family=Share+Tech+Mono&family=Rajdhani:wght@400;500;600;700&display=swap');
  
-/* ── CSS Variables ────────────────────────────────────────── */
+
 :root {
   --bg:           #080c10;
   --surface:      #0d1117;
@@ -17,7 +17,7 @@
   --nav-h:        56px;
 }
  
-/* ── Reset ────────────────────────────────────────────────── */
+
 *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
  
 html { scroll-behavior: smooth; font-size: 16px; }
@@ -30,7 +30,6 @@ body {
   min-height: 100vh;
 }
  
-/* ── Scanline overlay ─────────────────────────────────────── */
 body::before {
   content: '';
   position: fixed;
@@ -46,31 +45,14 @@ body::before {
   z-index: 9999;
 }
  
-/* ── Keyframes ────────────────────────────────────────────── */
+
 @keyframes blink     { 0%,100%{opacity:1} 50%{opacity:0} }
 @keyframes fadeUp    { from{opacity:0;transform:translateY(20px)} to{opacity:1;transform:translateY(0)} }
 @keyframes pulse     { 0%,100%{opacity:0.6;box-shadow:0 0 8px var(--accent)} 50%{opacity:1;box-shadow:0 0 20px var(--accent),0 0 40px rgba(0,212,255,0.3)} }
 @keyframes slideIn   { from{opacity:0;transform:translateX(-30px)} to{opacity:1;transform:translateX(0)} }
  
-/* ── ✏️ EDIT HIGHLIGHT ────────────────────────────────────── */
-/* All text/links you need to personalise are wrapped in
-   <span class="editable"> or have class="editable-block".
-   Remove the yellow highlight once you've filled in your info. */
-.editable {
-  background: rgba(255, 214, 0, 0.18);
-  border-bottom: 1.5px dashed #ffd600;
-  color: inherit;
-  cursor: text;
-  border-radius: 2px;
-  padding: 0 2px;
-}
-.editable-block {
-  border-left: 3px dashed #ffd600;
-  background: rgba(255, 214, 0, 0.06);
-  padding-left: 1rem;
-}
- 
-/* ── Navigation ───────────────────────────────────────────── */
+
+
 nav {
   position: fixed;
   top: 0; left: 0; right: 0;
@@ -151,14 +133,13 @@ nav {
   transition: all 0.3s;
 }
  
-/* ── Page wrapper ─────────────────────────────────────────── */
+
 .page-wrap {
   max-width: 1000px;
   margin: 0 auto;
   padding: calc(var(--nav-h) + 3rem) 1.5rem 4rem;
 }
- 
-/* ── Section header ───────────────────────────────────────── */
+
 .section-label {
   font-family: var(--mono);
   font-size: 11px;
@@ -183,14 +164,14 @@ nav {
   margin-bottom: 2.5rem;
 }
  
-/* ── Divider ──────────────────────────────────────────────── */
+
 .divider {
   border: none;
   border-top: 1px solid var(--border);
   margin: 0;
 }
  
-/* ── Buttons ──────────────────────────────────────────────── */
+
 .btn-primary {
   display: inline-block;
   padding: 0.75rem 2rem;
@@ -236,7 +217,7 @@ nav {
 }
 .btn-secondary:hover { border-color: var(--text-muted); color: var(--text); }
  
-/* ── Tags ─────────────────────────────────────────────────── */
+
 .tag {
   font-family: var(--mono);
   font-size: 11px;
@@ -248,12 +229,10 @@ nav {
   border-radius: 2px;
 }
  
-/* ── Cursor blink ─────────────────────────────────────────── */
+
 .cursor { animation: blink 1s step-end infinite; color: var(--accent); }
  
-/* ============================================================
-   HERO (index.html)
-   ============================================================ */
+
 .hero {
   min-height: calc(100vh - var(--nav-h));
   display: flex;
@@ -318,9 +297,7 @@ nav {
   pointer-events: none;
 }
  
-/* ============================================================
-   ABOUT (about.html)
-   ============================================================ */
+
 .about-grid {
   display: grid;
   grid-template-columns: 1fr 1fr;
@@ -401,9 +378,7 @@ nav {
 .cert-name { color: var(--text); font-weight: 600; }
 .cert-issuer { color: var(--text-muted); font-size: 13px; margin-left: auto; font-family: var(--mono); }
  
-/* ============================================================
-   SKILLS (skills.html)
-   ============================================================ */
+
 .skills-grid {
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
@@ -472,9 +447,7 @@ nav {
 }
 .tool-pill:hover { border-color: var(--accent2); color: var(--accent2); }
  
-/* ============================================================
-   PROJECTS (projects.html)
-   ============================================================ */
+
 .projects-grid {
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
@@ -552,9 +525,7 @@ nav {
 }
 .project-link:hover { border-color: var(--accent); }
  
-/* ============================================================
-   COMPETITIONS (competitions.html)
-   ============================================================ */
+
 .comp-list {
   display: flex;
   flex-direction: column;
@@ -604,9 +575,7 @@ nav {
   line-height: 1.8;
 }
  
-/* ============================================================
-   CONTACT (contact.html)
-   ============================================================ */
+
 .contact-grid {
   display: grid;
   grid-template-columns: 1fr 1fr;
@@ -684,9 +653,7 @@ nav {
 .form-textarea:focus { border-color: var(--accent); }
 .form-textarea { min-height: 120px; resize: vertical; }
  
-/* ============================================================
-   FOOTER
-   ============================================================ */
+
 footer {
   border-top: 1px solid var(--border);
   padding: 2rem 1.5rem;
@@ -697,9 +664,7 @@ footer {
 }
 footer span { color: var(--accent2); }
  
-/* ============================================================
-   RESPONSIVE — Tablet & Mobile
-   ============================================================ */
+
 @media (max-width: 768px) {
   /* Nav */
   .nav-links {
@@ -739,3 +704,4 @@ footer span { color: var(--accent2); }
   .projects-grid       { grid-template-columns: 1fr; }
   .tools-grid          { grid-template-columns: repeat(auto-fill, minmax(100px, 1fr)); }
 }
+ 
