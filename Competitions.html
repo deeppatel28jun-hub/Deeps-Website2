@@ -1,0 +1,169 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Competitions — Deep Patel</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+<nav>
+  <a href="index.html" class="nav-logo">[DEEP_SEC]</a>
+  <button class="nav-toggle" id="navToggle" aria-label="Open menu">
+    <span></span><span></span><span></span>
+  </button>
+  <ul class="nav-links" id="navLinks">
+    <li><a href="index.html">Home</a></li>
+    <li><a href="about.html">About</a></li>
+    <li><a href="skill.html">Skills</a></li>
+    <li><a href="Projects.html">Projects</a></li>
+    <li><a href="Experience.html">Experience</a></li>
+    <li><a href="Competitions.html" class="active">Competitions</a></li>
+    <li><a href="contact.html">Contact</a></li>
+  </ul>
+  <div class="nav-status">
+    <div class="status-dot"></div>
+    AVAILABLE
+  </div>
+</nav>
+
+<main class="page-wrap">
+
+  <div class="section-label">05 — competitions</div>
+  <h1 class="section-title">CTF &amp; Competitions</h1>
+
+  <div class="comp-list">
+
+    
+    <div class="comp-item">
+      <div class="comp-rank" style="color:var(--accent2);font-size:1rem;">[NCL]</div>
+      <div class="comp-info">
+        <h4>National Cyber League</h4>
+        <p>
+          Blue Team Competitor. Participated in individual and team game brackets
+          covering log analysis, network traffic analysis, password cracking,
+          web application security, and digital forensics challenges.
+        </p>
+        <div style="display:flex;flex-wrap:wrap;gap:0.5rem;margin-top:0.75rem;">
+          <span class="tag">Blue Team</span>
+          <span class="tag">Log Analysis</span>
+          <span class="tag">Network Forensics</span>
+          <span class="tag">Web Security</span>
+        </div>
+      </div>
+      <div class="comp-meta">
+        <div>Aug 2024</div>
+        <div>— May 2025</div>
+        <div style="color:var(--accent);font-size:10px;margin-top:4px;">CTF</div>
+      </div>
+    </div>
+
+    
+    <div class="comp-item">
+      <div class="comp-rank" style="color:var(--accent2);font-size:1rem;">[DOE]</div>
+      <div class="comp-info">
+        <h4>U.S. Department of Energy — CyberForce Competition</h4>
+        <p>
+          Competed in the DOE CyberForce Competition, a national collegiate cybersecurity
+          challenge focused on defending critical infrastructure systems against
+          real-world adversarial scenarios and red team attacks.
+        </p>
+        <div style="display:flex;flex-wrap:wrap;gap:0.5rem;margin-top:0.75rem;">
+          <span class="tag">Blue Team</span>
+          <span class="tag">Critical Infrastructure</span>
+          <span class="tag">Incident Response</span>
+          <span class="tag">Defence</span>
+        </div>
+      </div>
+      <div class="comp-meta">
+        <div>November</div>
+        <div>2025</div>
+        <div style="color:var(--accent);font-size:10px;margin-top:4px;">Federal CTF</div>
+      </div>
+    </div>
+
+  </div>
+
+  <hr class="divider" style="margin:3rem 0;">
+
+  
+  <div class="section-label">overview</div>
+  <h2 class="section-title" style="font-size:1.4rem;">Competition Profile</h2>
+
+  <div style="display:grid;grid-template-columns:repeat(auto-fit,minmax(160px,1fr));gap:1.25rem;
+              margin-bottom:3rem;">
+
+    <div class="stat-box" style="text-align:center;">
+      <span class="stat-num">2</span>
+      <span class="stat-label">Competitions</span>
+    </div>
+    <div class="stat-box" style="text-align:center;">
+      <span class="stat-num">Blue</span>
+      <span class="stat-label">Team Focus</span>
+    </div>
+    <div class="stat-box" style="text-align:center;">
+      <span class="stat-num">Federal</span>
+      <span class="stat-label">DOE CyberForce</span>
+    </div>
+    <div class="stat-box" style="text-align:center;">
+      <span class="stat-num">More</span>
+      <span class="stat-label">Coming Soon</span>
+    </div>
+
+  </div>
+
+  <hr class="divider" style="margin:3rem 0;">
+
+  <!-- FUTURE GOALS -->
+  <div class="section-label">upcoming</div>
+  <h2 class="section-title" style="font-size:1.4rem;">On My Radar</h2>
+
+  <div style="display:flex;flex-direction:column;gap:0.75rem;">
+
+    <div class="cert-item">
+      <span class="cert-icon">[→]</span>
+      <div>
+        <div class="cert-name" style="color:var(--text-muted);font-weight:400;">
+          NCL Spring Season 2026
+        </div>
+      </div>
+      <span class="cert-issuer" style="color:var(--warn);">UPCOMING</span>
+    </div>
+
+    <div class="cert-item">
+      <span class="cert-icon">[→]</span>
+      <div>
+        <div class="cert-name" style="color:var(--text-muted);font-weight:400;">
+          PicoCTF 2026
+        </div>
+      </div>
+      <span class="cert-issuer" style="color:var(--warn);">UPCOMING</span>
+    </div>
+
+    <div class="cert-item">
+      <span class="cert-icon">[→]</span>
+      <div>
+        <div class="cert-name" style="color:var(--text-muted);font-weight:400;">
+          DOE CyberForce 2026
+        </div>
+      </div>
+      <span class="cert-issuer" style="color:var(--warn);">UPCOMING</span>
+    </div>
+
+  </div>
+
+</main>
+
+<footer>
+  <p>Built by <span>Deep Patel</span> — Pure HTML &amp; CSS — Hosted on GitHub Pages</p>
+</footer>
+
+<script>
+  document.getElementById('navToggle').addEventListener('click', function () {
+    document.getElementById('navLinks').classList.toggle('open');
+  });
+</script>
+
+</body>
+</html>
