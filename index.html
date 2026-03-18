@@ -3,18 +3,14 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <!-- ✏️ EDIT: Change the tab title -->
-  <title>Deep's Portfolio — Cybersecurity</title>
+  <title>Deep's Portfolio </title>
   <link rel="stylesheet" href="styles.css">
 </head>
 <body>
  
-<!-- ═══════════════════════════════════════════════
-     NAVIGATION  (same on every page)
-     ✏️ EDIT: Update nav-logo text if you want a different handle
-     ═══════════════════════════════════════════════ -->
+
 <nav>
-  <a href="index.html" class="nav-logo">[<span class="editable">DEEP</span>_SEC]</a>
+  <a href="index.html" class="nav-logo">[<span class="editable">Deep</span>]</a>
  
   <button class="nav-toggle" id="navToggle" aria-label="Open menu">
     <span></span><span></span><span></span>
@@ -28,38 +24,28 @@
     <li><a href="competitions.html">Competitions</a></li>
     <li><a href="contact.html">Contact</a></li>
   </ul>
- 
-  <!-- ✏️ EDIT: Change "AVAILABLE" to "OPEN TO WORK" or remove this block -->
-  <div class="nav-status">
-    <div class="status-dot"></div>
-    AVAILABLE
-  </div>
 </nav>
  
-<!-- ═══════════════════════════════════════════════
-     HERO SECTION
-     ═══════════════════════════════════════════════ -->
+
 <section class="hero">
  
-  <!-- ✏️ EDIT: Your role / tagline -->
   <div class="hero-tag">// <span class="editable">cybersecurity student &amp; researcher</span></div>
  
-  <!-- ✏️ EDIT: Your name -->
   <h1 class="hero-name">
     <span class="editable">Deep</span>'s<br>
     <span class="accent">Portfolio</span>
   </h1>
  
-  <!-- ✏️ EDIT: Your specialisation -->
+  
   <div class="hero-title">
     <span class="editable">Penetration Testing &amp; CTF Player</span><span class="cursor">_</span>
   </div>
  
-  <!-- ✏️ EDIT: Short bio / elevator pitch (2–3 sentences) -->
   <p class="hero-desc editable-block">
-    Cybersecurity student with a passion for offensive security, ethical hacking,
-    and CTF competitions. I'm building real-world skills in penetration testing,
-    vulnerability research, and secure system design — one challenge at a time.
+    Cybersecurity student with experience in Linux and Microsoft operating systems. 
+    Proven ability to work and deliver in multicultural teams and to share ideas and knowledge. 
+    Motivated to protect digital spaces and create products and services that protect users and organizations from viruses and hacks.
+    Proficiency in multiple languages including English, Hindi, and Gujarati
   </p>
  
   <div class="hero-ctas">
@@ -67,7 +53,7 @@
     <a href="contact.html" class="btn-secondary">Contact Me</a>
   </div>
  
-  <!-- Decorative hex grid (visual only, no editing needed) -->
+
   <svg class="hero-visual" width="400" height="480" viewBox="0 0 400 480" aria-hidden="true">
     <defs>
       <pattern id="hexpat" x="0" y="0" width="60" height="52" patternUnits="userSpaceOnUse">
@@ -80,10 +66,7 @@
  
 </section>
  
-<!-- ═══════════════════════════════════════════════
-     QUICK STATS BAR
-     ✏️ EDIT: Update the numbers to match your real stats
-     ═══════════════════════════════════════════════ -->
+
 <div style="border-top:1px solid var(--border);border-bottom:1px solid var(--border);
             background:var(--surface);">
   <div style="max-width:1000px;margin:0 auto;padding:1.5rem;
@@ -91,45 +74,35 @@
  
     <div style="text-align:center;">
       <span style="font-family:var(--mono);font-size:1.8rem;color:var(--accent);display:block;">
-        <span class="editable">2+</span>
+        <span class="editable">3</span>
       </span>
       <span style="font-size:13px;color:var(--text-muted);">Years Studying</span>
     </div>
  
     <div style="text-align:center;">
       <span style="font-family:var(--mono);font-size:1.8rem;color:var(--accent);display:block;">
-        <span class="editable">15+</span>
+        <span class="editable">5</span>
       </span>
       <span style="font-size:13px;color:var(--text-muted);">CTFs Competed</span>
     </div>
  
     <div style="text-align:center;">
       <span style="font-family:var(--mono);font-size:1.8rem;color:var(--accent);display:block;">
-        <span class="editable">10+</span>
+        <span class="editable">3</span>
       </span>
       <span style="font-size:13px;color:var(--text-muted);">Projects Built</span>
     </div>
  
-    <div style="text-align:center;">
-      <span style="font-family:var(--mono);font-size:1.8rem;color:var(--accent);display:block;">
-        <span class="editable">5+</span>
-      </span>
-      <span style="font-size:13px;color:var(--text-muted);">Certs &amp; Courses</span>
-    </div>
  
   </div>
 </div>
  
-<!-- ═══════════════════════════════════════════════
-     FOOTER  (same on every page)
-     ✏️ EDIT: Your name in the footer
-     ═══════════════════════════════════════════════ -->
+
 <footer>
-  <p>Built by <span class="editable">Deep</span> — Pure HTML &amp; CSS — Hosted on GitHub Pages</p>
+  <p>Built by Deep <span class="editable">Deep</span> — HTML &amp; CSS — Hosted on GitHub Pages</p>
 </footer>
  
 <script>
-  // Mobile nav toggle — no framework needed
   document.getElementById('navToggle').addEventListener('click', function () {
     document.getElementById('navLinks').classList.toggle('open');
   });
