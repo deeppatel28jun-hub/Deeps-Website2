@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Projects — Deep's Portfolio</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+
+<nav>
+  <a href="index.html" class="nav-logo">[<span class="editable">DEEP</span>_SEC]</a>
+  <button class="nav-toggle" id="navToggle" aria-label="Open menu">
+    <span></span><span></span><span></span>
+  </button>
+  <ul class="nav-links" id="navLinks">
+    <li><a href="index.html">Home</a></li>
+    <li><a href="about.html">About</a></li>
+    <li><a href="skill.html">Skills</a></li>
+    <li><a href="Projects.html" class="active">Projects</a></li>
+    <li><a href="Competitions.html">Competitions</a></li>
+    <li><a href="contact.html">Contact</a></li>
+  </ul>
+  <div class="nav-status">
+    <div class="status-dot"></div>
+    AVAILABLE
+  </div>
+</nav>
+
+
+<main class="page-wrap">
+
+  <div class="section-label">03 — projects</div>
+  <h1 class="section-title">Selected Work</h1>
+
+  <div class="projects-grid">
+
+   
+    <div class="project-card editable-block">
+      <div class="project-top">
+       
+        <span class="project-status status-active">ACTIVE</span>
+        <span class="project-num">01</span>
+      </div>
+      <div class="project-body">
+        <div class="project-name editable">Network Scanner Tool</div>
+
+        <div class="project-desc editable">
+          A Python-based stealthy network reconnaissance tool that identifies open ports,
+          running services, and potential misconfigurations on authorised target networks.
+          Designed with evasion techniques for authorised penetration testing engagements.
+        </div>
+        <div class="project-tags">
+          <span class="tag editable">Python</span>
+          <span class="tag editable">Scapy</span>
+          <span class="tag editable">Network Sec</span>
+        </div>
+        <a href="https://github.com/YOUR-USERNAME/YOUR-REPO" class="project-link editable" target="_blank">
+          → View on GitHub
+        </a>
+      </div>
+    </div>
+
+
+    <div class="project-card editable-block">
+      <div class="project-top">
+        <span class="project-status status-active">ACTIVE</span>
+        <span class="project-num">02</span>
+      </div>
+      <div class="project-body">
+        <div class="project-name editable">Web Vulnerability Scanner</div>
+        <div class="project-desc editable">
+          Automated web application scanner targeting OWASP Top 10 vulnerabilities.
+          Includes smart fuzzing, authentication testing, and a clean HTML report generator.
+        </div>
+        <div class="project-tags">
+          <span class="tag editable">Python</span>
+          <span class="tag editable">OWASP</span>
+          <span class="tag editable">Web Sec</span>
+        </div>
+        <a href="https://github.com/YOUR-USERNAME/YOUR-REPO" class="project-link editable" target="_blank">
+          → View on GitHub
+        </a>
+      </div>
+    </div>
+  </div>
+
+
+  <div style="margin-top:3rem;text-align:center;padding:2rem;
+              border:1px solid var(--border);background:var(--surface);">
+    <p style="color:var(--text-muted);margin-bottom:1.25rem;font-size:15px;">
+      See all my code and commit history on GitHub
+    </p>
+    
+    <a href="https://github.com/deeppatel28jun-hub" class="btn-primary editable" target="_blank">
+      → github.com/Deeppatel
+    </a>
+  </div>
+
+</main>
+
+
+<footer>
+  <p>Built by <span class="editable">Deep</span> — Pure HTML &amp; CSS — Hosted on GitHub Pages</p>
+</footer>
+
+<script>
+  document.getElementById('navToggle').addEventListener('click', function () {
+    document.getElementById('navLinks').classList.toggle('open');
+  });
+</script>
+
+</body>
+</html>
