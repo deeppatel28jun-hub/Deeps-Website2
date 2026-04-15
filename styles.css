@@ -481,6 +481,7 @@ nav {
 .status-active { border-color: var(--accent2); color: var(--accent2); }
 .status-wip    { border-color: var(--warn);    color: var(--warn); }
 .status-done   { border-color: var(--text-muted); color: var(--text-muted); }
+.status-complete { border-color: #ffd700; color: #ffd700; }
  
 .project-num {
   font-family: var(--mono);
