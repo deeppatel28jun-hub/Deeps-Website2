@@ -462,13 +462,11 @@ nav {
   border-color: var(--accent2);
   transform: translateY(-3px);
 }
-
 .project-card:has(.status-complete):hover {
   border-color: #ffd700;
 }
-
 .project-card:has(.status-upcoming):hover {
-  border-color: var(--warn);
+  border-color: #ffa502;
 }
 
 .project-top {
@@ -487,7 +485,7 @@ nav {
   letter-spacing: 1px;
 }
 .status-active { border-color: var(--accent2); color: var(--accent2); }
-.status-upcoming    { border-color: var(--warn);    color: var(--warn); }
+.status-upcoming { border-color: #ffa502; color: #ffa502; }
 .status-done   { border-color: var(--text-muted); color: var(--text-muted); }
 .status-complete { border-color: #ffd700; color: #ffd700; }
  
