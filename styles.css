@@ -113,7 +113,7 @@ nav {
   flex-shrink: 0;
 }
  
-/* Hamburger (mobile) */
+
 .nav-toggle {
   display: none;
   flex-direction: column;
@@ -424,7 +424,7 @@ nav {
   transition: width 1.2s ease 0.3s;
 }
  
-/* Tools section */
+
 .tools-grid {
   display: grid;
   grid-template-columns: repeat(auto-fill, minmax(120px, 1fr));
@@ -560,13 +560,13 @@ nav {
 .comp-rank.bronze { color: #cd7f32; }
  
 .comp-info h4 {
-  font-size: 16px;
+  font-size: 17px;
   font-weight: 600;
   color: #fff;
   margin-bottom: 4px;
 }
 .comp-info p {
-  font-size: 13px;
+  font-size: 15px;
   color: var(--text-muted);
   line-height: 1.6;
 }
